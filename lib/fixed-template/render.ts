@@ -133,18 +133,9 @@ function applyCopy(html: string, input: FixedTemplateInput): string {
 
 export function extractStyle(html:string):string{return [...html.matchAll(/<style>([\s\S]*?)<\/style>/g)].map(m=>m[1]??"").join("\n")}
 export function extractBody(html:string):string{const m=html.match(/<body[^>]*>([\s\S]*)<\/body>/i);return(m?.[1]??html).replace(/<script[\s\S]*?<\/script>/g,"")}
-// Inner pages reuse the approved home header: its colors are written for its own background
-// (e.g. resource: white brand on navy), so a generic transparent header made them unreadable.
-function innerChromeFromHome(home:string,skin:string):string{
-  const {chrome}=splitFixedChrome(extractBody(home),skin);
-  if(!chrome||!/<h1[\s>]/.test(chrome))return chrome;
-  // Hero-style headers (pixel) carry the hero art and H1; keep only the bar holding brand + nav.
-  const bar=balancedFirstElement(chrome,'<div class="topbar',"div");
-  return bar?`<header class="template-inner-header">${bar}</header>`:"";
-}
 function deriveInnerTemplate(home:string,pack:TemplatePack):string{
   const style=extractStyle(home); const fg=pack.dark?"#F4F4F5":"#1F2937", muted=pack.dark?"#A1A1AA":"#667085";
-  const header=innerChromeFromHome(home,pack.skin)||`<header class="template-inner-header"><div class="template-inner-row"><a class="brand" href="home.html" aria-label="Back to homepage"><strong>Game</strong></a><nav class="site-nav"><a class="nav-link" href="inner.html#guide">Guide</a></nav></div></header>`;
+  const header=splitFixedChrome(extractBody(home),pack.skin).chrome||`<header class="template-inner-header"><div class="template-inner-row"><a class="brand" href="home.html" aria-label="Back to homepage"><strong>Game</strong></a><nav class="site-nav"><a class="nav-link" href="inner.html#guide">Guide</a></nav></div></header>`;
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Game Guide</title><style>${style}\n:root{--accent:${pack.defaultAccent}}body{background:${pack.background};color:${fg}}.template-inner-header{position:relative;z-index:10;border-bottom:1px solid color-mix(in srgb,${fg} 18%,transparent)}.template-inner-row{width:min(1120px,calc(100% - 32px));min-height:68px;margin:auto;display:flex;align-items:center;gap:20px}.template-inner-row .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:${fg}}.template-inner-row .brand strong{color:${fg}}.template-inner-row .site-nav{margin-left:auto;display:flex;flex-wrap:wrap;gap:6px}.template-inner-row .nav-link{padding:9px 11px;text-decoration:none;color:${muted}}.template-inner-row .nav-link.active{color:${fg};background:transparent;box-shadow:inset 0 -2px 0 var(--accent)}.template-inner-main{width:min(980px,calc(100% - 32px));margin:auto;padding:34px 0 54px}.site-breadcrumb{font-size:12px;color:${muted};margin-bottom:22px}.site-breadcrumb a{color:var(--accent)}.template-inner-article h1{font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.02;margin:0 0 18px}.template-inner-article h2{margin-top:38px}.template-inner-article p,.template-inner-article li{line-height:1.78;color:${muted}}.template-inner-footer{border-top:1px solid color-mix(in srgb,${fg} 18%,transparent);padding:30px 0}.template-inner-footer>div{width:min(1120px,calc(100% - 32px));margin:auto;color:${muted};font-size:13px}@media(max-width:760px){.template-inner-row .site-nav{display:none}}</style></head><body data-template="${pack.specId.replace(/^\d+-/,"")}">${header}<main class="template-inner-main"><div class="site-breadcrumb"><a href="home.html">Home</a> › Guide</div><article class="template-inner-article"><h1>Game Guide</h1><p class="lead">Player guide and reference page.</p><section id="guide"><h2>Guide</h2><p>Guide content.</p></section></article></main><footer class="template-inner-footer"><div>Independent player guide</div></footer></body></html>`;
 }
 function templateSource(skin:string,page:"home"|"inner"){const pack=templatePack(skin),source=SPEC_HTML[pack.specId];if(!source?.home)throw new Error(`Missing approved HTML for ${pack.specId} home`);return{pack,html:page==="home"?source.home:(source.inner||deriveInnerTemplate(source.home,pack))}}
@@ -192,11 +183,11 @@ export function splitFixedChrome(body:string,_skin:string):{chrome:string;rest:s
     if(hs>=0&&he>=0)rawChrome=source.slice(hs,he+9);
   }
   const rest=rawChrome?source.replace(rawChrome,""):source;
-  // Strip any embedded hero block (e.g. 06-pixel header.hero-wrap) from chrome so FixedTemplateHeader never renders a duplicate H1/hero
+  // The page renders its own hero. Keep only the brand and navigation from a hero-style header.
   let chrome=rawChrome;
-  if(chrome.includes('<div class="hero">')&&chrome.endsWith("</header>")){
-    const heroDiv=balancedFirstElement(chrome,'<div class="hero">',"div");
-    if(heroDiv)chrome=chrome.replace(heroDiv,"");
+  if(/<h1[\s>]/i.test(chrome)){
+    const bar=balancedFirstElement(chrome,'<div class="topbar',"div");
+    chrome=bar?`<header class="template-inner-header">${bar}</header>`:"";
   }
   return{chrome,rest};
 }
