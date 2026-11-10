@@ -1,0 +1,64 @@
+{
+  "readyForLaunch": true,
+  "siteName": "Rarest Answer Party! Guide",
+  "shortName": "Rarest Answer Party!",
+  "description": "Get oriented with Rarest Answer Party on Roblox: learn where to find guides, how rounds work, answer strategies, difficulty options, private servers. Read more.",
+  "language": "en",
+  "locale": "en_US",
+  "authorName": "Editorial Team",
+  "theme": {
+    "preset": "obsidian-red",
+    "overrides": {
+      "background": "42 46% 93%",
+      "foreground": "0 0% 7%",
+      "card": "42 16% 100%",
+      "card-foreground": "0 0% 7%",
+      "primary": "227 66% 52%",
+      "primary-foreground": "0 0% 100%",
+      "secondary": "42 46% 86%",
+      "muted": "42 46% 88%",
+      "muted-foreground": "0 0% 7%",
+      "border": "0 0% 16%",
+      "radius": "0px",
+      "card-shadow": "4px 4px 0 rgba(20,16,8,.9)",
+      "hero-gradient": "linear-gradient(180deg, hsl(227 66% 52% / .28), transparent 70%)",
+      "background-pattern": "linear-gradient(hsl(0 0% 7% / .16) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 7% / .16) 1px, transparent 1px)",
+      "font-sans": "\"Source Sans 3\", ui-sans-serif, system-ui, sans-serif",
+      "font-heading": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+      "heading-weight": "600",
+      "heading-letter-spacing": "0em"
+    },
+    "skin": "pixel",
+    "headerStyle": "solid",
+    "componentStyle": "sharp",
+    "accentColorId": "default",
+    "colorMode": "custom",
+    "background": "#F5F0E4",
+    "accent": "#3558D6",
+    "fontId": "ibm-plex-mono"
+  },
+  "hosting": {
+    "siteUrl": "https://rarest-answer-party.github.io",
+    "basePath": "",
+    "customDomain": null
+  },
+  "allowedExternalDomains": [
+    "www.roblox.com"
+  ],
+  "assets": {
+    "logo": "/images/rarest-answer-party-logo.png",
+    "cover": "/images/rarest-answer-party-cover.png",
+    "openGraph": "/images/rarest-answer-party-og.svg",
+    "favicon": "/images/rarest-answer-party-logo.png"
+  },
+  "game": {
+    "name": "Rarest Answer Party!",
+    "platform": "Roblox",
+    "developer": "",
+    "genre": "Party & Casual",
+    "officialUrl": "https://www.roblox.com/games/70967715806705"
+  },
+  "seo": {
+    "titleTemplate": "%s | Rarest Answer Party! Guide"
+  }
+}

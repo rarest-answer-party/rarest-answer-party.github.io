@@ -1,0 +1,194 @@
+{
+  "enabled": true,
+  "slug": "",
+  "pageType": "home",
+  "title": "Rarest Answer Party! Guide: All Key Facts Updated 2026",
+  "description": "Get oriented with Rarest Answer Party on Roblox: learn where to find guides, how rounds work, answer strategies, difficulty options, private servers. Read more.",
+  "navVisible": true,
+  "hero": {
+    "eyebrow": "Rarest Answer Party! Wiki & Guide",
+    "heading": "Rarest Answer Party! Guide and Verified Game Resources",
+    "lead": "Rarest Answer Party on Roblox is a quiz game where the rarer your answer, the more points you earn—outscore everyone to win. Play free across Easy, Medium, Hard, and Random difficulty servers, customize matches in private servers with friends, and collect mics and chairs as you compete. This guide covers verified game mechanics, how to play, strategies for finding rare answers, and next steps for new players.",
+    "supportingText": "",
+    "primaryLink": {
+      "label": "Open Answers",
+      "slug": "answers"
+    },
+    "secondaryLink": {
+      "label": "Open official game page",
+      "url": "https://www.roblox.com/games/70967715806705"
+    }
+  },
+  "sections": [
+    {
+      "id": "how-rarest-answer-party-works-core-gameplay-loop",
+      "heading": "How Rarest Answer Party Works: Core Gameplay Loop",
+      "intro": "Rarest Answer Party is built on a simple but competitive premise: when the game asks a question, your goal is to give an answer that fewer other players will think of. The rarer your answer, the more points you earn. This rarity-based scoring system means that obvious, common answers earn you little or nothing, while thoughtful or unexpected responses vault you ahead. Players compete across each round to outscore everyone else, and the player with the highest total at the end wins.",
+      "paragraphs": [
+        "Each match follows a turn structure where questions are posed to all players simultaneously. You submit your answer, and the game calculates its rarity based on how many other players in that round gave the same or similar response. Answers that only one or two players chose reward significantly more points than answers chosen by half the lobby. This creates a strategic tension: you need to think creatively enough to avoid the obvious path that most players will take, but your answer still needs to be reasonable and relevant to the prompt.",
+        "The competitive element is straightforward—whoever racks up the most points by the final round wins. This encourages both quick thinking and a willingness to trust unconventional ideas. New players often start by guessing what seems like the 'right' answer, only to realize that correctness is less valuable than unexpectedness. Learning to balance relevance with rarity is the core skill that separates casual players from consistent winners."
+      ],
+      "table": {
+        "caption": "Rarest Answer Party Quick Reference & Progression Overview",
+        "columns": [
+          "Progression Stage",
+          "Core Objective",
+          "Key Mechanic",
+          "Player Priority"
+        ],
+        "rows": [
+          [
+            "Early Game Setup",
+            "Learn Rarest Answer Party! core loop",
+            "Initial resource & starter unlock",
+            "Complete tutorial loop before spending currency"
+          ],
+          [
+            "Mid Game Scaling",
+            "Unlock higher multiplier tiers",
+            "Loadout / upgrade synergy",
+            "Focus on repeatable milestones and efficiency"
+          ],
+          [
+            "Endgame & Updates",
+            "Bosses, events, and new worlds",
+            "High-tier drops & patch preparation",
+            "Track official update logs and optimize builds"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "choosing-your-difficulty-easy-medium-hard-and-random-modes",
+      "heading": "Choosing Your Difficulty: Easy, Medium, Hard, and Random Modes",
+      "intro": "Rarest Answer Party offers four difficulty server options: Easy, Medium, Hard, and Random. Each difficulty changes the question complexity and the types of prompts you'll face. New players typically start with Easy servers to learn how rarity scoring works before moving to Medium or Hard. Random mode mixes difficulty levels within a single match, making each round unpredictable.",
+      "paragraphs": [
+        "Pick Easy if you want straightforward prompts with broader acceptable answers, giving you time to practice thinking laterally. Medium and Hard servers introduce more specific or niche topics, rewarding deeper knowledge and creative thinking. Random mode is best for experienced players who want variety and are comfortable adapting their strategy mid-match."
+      ],
+      "steps": [
+        {
+          "heading": "Check Current Rarest Answer Party Requirements",
+          "description": "Review the active mechanics and prerequisites inside Rarest Answer Party! before committing resources."
+        },
+        {
+          "heading": "Complete the Core Progression Loop",
+          "description": "Follow the primary objective sequence to unlock the next multiplier, zone, or equipment slot."
+        },
+        {
+          "heading": "Verify Post-Update Changes",
+          "description": "Re-check the comparison table and official Rarest Answer Party! patch notes whenever a new update drops."
+        }
+      ]
+    },
+    {
+      "id": "playing-with-friends-free-private-servers-and-match-customization",
+      "heading": "Playing with Friends: Free Private Servers and Match Customization",
+      "intro": "Rarest Answer Party offers free private servers so you can play with friends in a closed match. To create one, open the game's Roblox page, click the Servers tab, and select Create Private Server—no Robux purchase is required. Once the server is live, copy the join link and share it with your group. Only players with the link can enter, giving you full control over who participates.",
+      "paragraphs": [
+        "Private servers let you customize the match, though the exact settings available have not been fully detailed by the developer. Based on the official description, customization is a confirmed feature, so expect options such as adjusting round count, time limits, or question pools. To explore these settings, launch your private server and look for a configuration menu or host controls panel before starting the first round. If no menu appears immediately, check for an in-game settings button or consult the developer's social channels for a setup guide."
+      ]
+    },
+    {
+      "id": "collectibles-mics-and-chairs",
+      "heading": "Collectibles: Mics and Chairs",
+      "intro": "Rarest Answer Party includes two collectible items: mics and chairs. These are items you can gather as you play, adding a collection element to your progression. The official game description confirms both are available to collect, though the specific mechanics for obtaining them—whether through gameplay rewards, achievements, or random drops—are not detailed in verified sources.",
+      "paragraphs": [
+        "Since the core gameplay loop focuses entirely on answering questions and scoring based on rarity, mics and chairs do not directly affect your ability to answer or your point calculations during rounds. They appear to be cosmetic or display items that track your collection progress rather than gameplay modifiers. If you're interested in learning more about how to specifically unlock or display these collectibles, check the in-game UI or your player profile after playing a few rounds.",
+        "For a complete breakdown of how collectibles fit into progression and cosmetics, see the Mics and Chairs guide."
+      ]
+    },
+    {
+      "id": "strategy-tips-for-finding-rare-answers",
+      "heading": "Strategy Tips for Finding Rare Answers",
+      "intro": "Success in Rarest Answer Party depends on choosing answers most players overlook. Instead of typing the first word that comes to mind, pause and ask what everyone else will guess—then pick something different. Common answers score few points, so avoid the obvious even when it feels safe.",
+      "paragraphs": [
+        "Think laterally around each prompt. If the question is about animals, skip dogs and cats; consider regional species, historical animals, or scientific names. For geography prompts, look beyond capital cities to smaller towns, regions, or alternative names. Niche knowledge—obscure trivia, technical terms, and less-popular examples—consistently outscores mainstream picks.",
+        "Watch the scoreboard after each round to see which answers earned the most points. High-scoring responses reveal what the current lobby considers rare, helping you calibrate your thinking for the next question. Over time you will spot patterns in what others miss and refine your instinct for rarity."
+      ]
+    },
+    {
+      "id": "approved-player-needs",
+      "eyebrow": "Guides & Wiki",
+      "heading": "Explore Rarest Answer Party! Guides & Resources",
+      "intro": "Browse our dedicated Rarest Answer Party! guides covering active redeem codes, beginner progression, tier lists, and core gameplay mechanics.",
+      "links": [
+        {
+          "label": "Rarest Answer Party Answers",
+          "slug": "answers",
+          "description": "Explore Rarest Answer Party answers with prompt-selection tips, rarity guidance, and a repeatable round method. Check answer ideas carefully against the live."
+        },
+        {
+          "label": "Rarest Answer Party Beginner Guide",
+          "slug": "beginner-guide",
+          "description": "Learn how to play Rarest Answer Party, follow each round, understand rarity and scoring, choose a difficulty, and avoid common beginner mistakes with."
+        },
+        {
+          "label": "Rarest Answer Party Codes",
+          "slug": "codes",
+          "description": "Check the latest verified status for Rarest Answer Party codes, learn how to confirm a code belongs to this game, and see what to verify before trying one."
+        },
+        {
+          "label": "Rarest Answer Party Mics And Chairs",
+          "slug": "mic-chair",
+          "description": "Find where to check mics and chairs in Rarest Answer Party, review item details and currency before buying, and troubleshoot items that do not appear."
+        },
+        {
+          "label": "Rarest Answer Party Private Servers",
+          "slug": "private-server",
+          "description": "Learn how to create a Rarest Answer Party private server with friends, check access when someone cannot join, and confirm the difficulty of a public queue."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "How do you play Rarest Answer Party on Roblox?",
+      "answer": "Answer trivia questions, but the rarer your answer compared to what others submit, the more points you score. Players compete to outscore everyone in each round. Choose from Easy, Medium, Hard, or Random difficulty servers depending on your skill level."
+    },
+    {
+      "question": "What makes an answer rare in Rarest Answer Party?",
+      "answer": "An answer is rare when fewer other players guess it. The scoring system rewards uniqueness, so thinking beyond the most obvious response gives you an advantage. Balancing rarity with correctness is the core strategy."
+    },
+    {
+      "question": "How do you play Rarest Answer Party with friends?",
+      "answer": "The game offers free private servers that let you create a match just for your friends. Private servers allow you to customize the match settings, so you can control the difficulty and rules before playing."
+    },
+    {
+      "question": "What are mics and chairs in Rarest Answer Party?",
+      "answer": "Mics and chairs are collectibles you can gather while playing. The game includes them as cosmetic or progression items, though specifics on how they affect gameplay or appearance are best found in the answers and beginner guide pages."
+    },
+    {
+      "question": "Does Rarest Answer Party have working codes or free rewards?",
+      "answer": "No verified codes have been corroborated across independent sources for this game. Check the codes page for the latest redemption status and updates, or follow the official game page for announcements."
+    }
+  ],
+  "screenshots": [],
+  "sources": [
+    {
+      "url": "https://www.roblox.com/games/70967715806705",
+      "title": "Rarest Answer Party! 🦐",
+      "sourceType": "official"
+    },
+    {
+      "url": "https://rarestanswerparty.wiki/",
+      "title": "Rarest Answer Party!",
+      "sourceType": "guide"
+    },
+    {
+      "url": "https://rarestanswerpartywiki.wiki/",
+      "title": "Rarest Answer Party!",
+      "sourceType": "guide"
+    },
+    {
+      "url": "https://rarest-answer-party.wiki/",
+      "title": "Rarest Answer Party!",
+      "sourceType": "guide"
+    },
+    {
+      "url": "https://www.roblox.com/games/70967715806705",
+      "title": "Rarest Answer Party! Official Mechanics & Early-Bird Reference",
+      "sourceType": "guide"
+    }
+  ],
+  "lastReviewed": "2026-11-10"
+}
